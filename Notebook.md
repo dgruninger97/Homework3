@@ -18,3 +18,9 @@ Again, the idea behind this approach is the reasoning that we can hide the diffe
 
 ### Option 2: Abstract Factory Approach
 
+The second option of using an abstract factory approach also could apply to our problem. Since there are substantial differences regarding the **data structures**
+used by the graph implementations, it makes sense to group them up as **families of related objects**. This approach would mean that we have two separate factories
+which both differently handle the construction of the graphs.
+
+Again, I have made a **preliminary sketch** of what this might loook like regarding an implemetation below.
+![AbstractFactory](images/AbstractFactoryDiagram.png)
