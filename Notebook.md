@@ -58,3 +58,17 @@ For this iteration, our goal is going to be to refine our Domain Model diagram s
 #### ADD Iteration 3: Choose One of More Elements of the System to Refine
 
 We will be refining the Domain Model provided here, since it is really our only system element that we can adjust to accomplish our drivers.
+
+#### ADD Iteration 4: Choose One or More Design Concepts that Satisfy the Selected Drivers
+
+For this iteration, I will be apply the **Abstract Factory** pattern to our Domain Model. This will allow us to have factories which will separately construct
+both the 2DGraph and ListGraph. Additionally, I will be instantiating another class called ComputationComparison. This class will take the responsibility of
+**comparing the performances of the 2DArray implementation vs the ListGraph implementation**. This decision will satisfy **US1**. Additionally, we construct another
+class with the responsibility of computing the average execution time for the graph implementations. This particular decision will satisfy **US2**. If you reference
+my preliminary sketch of my AbstractFactory pattern, you will notice that I already have handled the idea of unweighted graphs vs weighted graphs by providing
+both weighted and unweighted edge objects which are contained in the abstract GraphImplementation class. I intend to use the same strategy so, thereby allowing
+me to compare the graph implementations using both unweighted edges and weighted edges. This will address **US3** regarding our drivers.
+
+#### ADD Iteration 5: Instantiate Architectural Elements, Allocate Responsibilities and Define Interfaces
+
+Below is the **modified Domain Model** which includes the implementation of the Design Concepts mentioned above.
