@@ -59,11 +59,25 @@ We will be refining the Domain Model provided here, since it is really our only 
 For this iteration, I will be apply the **Abstract Factory** pattern to our Domain Model. This will allow us to have factories which will separately construct
 both the 2DGraph and ListGraph. Additionally, I will be instantiating another class called ComputationComparison. This class will take the responsibility of
 **comparing the performances of the 2DArray implementation vs the ListGraph implementation**. This decision will satisfy **US1**. Additionally, we construct another
-class with the responsibility of computing the average execution time for the graph implementations. This particular decision will satisfy **US2**. If you reference
+class with the responsibility of computing the average execution time for the graph implementations called AverageComparison. This particular decision will satisfy **US2**. If you reference
 my preliminary sketch of my AbstractFactory pattern, you will notice that I already have handled the idea of unweighted graphs vs weighted graphs by providing
 both weighted and unweighted edge objects which are contained in the abstract GraphImplementation class. I intend to use the same strategy so, thereby allowing
 me to compare the graph implementations using both unweighted edges and weighted edges. This will address **US3** regarding our drivers.
 
 #### ADD Iteration 5: Instantiate Architectural Elements, Allocate Responsibilities and Define Interfaces
 
-Below is the **modified Domain Model** which includes the implementation of the Design Concepts mentioned above.
+Design Decision: Modify the Domain Model to reflect the concepts used in ADD Iteration 4.
+
+#### ADD Iteration 6: Sketch Views and Record Design Decisions
+
+Below is the modified Domain Model which includes the implementation of the Design Concepts used in ADD Iteration 4.
+
+![NewDomainModel](images/FinalDomainModel1.png)
+
+#### ADD Iteration 7: Perform Anaylsis of Current Design and Review Iteration Goal and Achievement of Design Purpose
+
+| Addressed| Partially Addressed | Not Addressed  | Decisions Made during Iteration |
+| :---     | :---                |     :---:      |          ---: |
+| US1      |                     |                |   Use the abstract factory method to allow construction of both Graphs, allowing for comparison using the ComputationComparison class    |
+| US2      |                     |                |   Construct a class called AverageComparison to compute the average of both graph implementations                             |
+| US3      |                     |                |   Use the already structured edge implementations to implement an abstract edge which can be switched out at any time                        |
