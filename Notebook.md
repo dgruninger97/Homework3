@@ -82,6 +82,12 @@ Below is the modified Domain Model which includes the implementation of the Desi
 | US2      |                     |                |   Construct a class called AverageComparison to compute the average of both graph implementations                             |
 | US3      |                     |                |   Use the already structured edge implementations to implement an abstract edge which can be switched out at any time                        |
 
+#### External Research
+
+https://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm
+
+https://www.geeksforgeeks.org/abstract-factory-pattern/
+
 ## Entry 2 Singleton
 
 Now we are going to use the approach of using a Single via a Transaction Script
@@ -116,6 +122,12 @@ Below is my developed domain model, using the Transaction Script Pattern.
 
 
 #### ADD Iteration 7: Perform Anaylsis of Current Design and Review Iteration Goal and Achievement of Design Purpose
+
+| Addressed| Partially Addressed | Not Addressed  | Decisions Made during Iteration |
+| :---     | :---                |     :---:      |          ---: |
+| US1      |                     |                | Use the Transaction Script Singleton pattern to hold all computation logic within that Singleton class      |
+| US2      |                     |                | Use the Transaction Script Singleton pattern to hold all computation logic within that Singleton class                |
+| US3      |                     |                |  Use the already structured edge implementations to implement an abstract edge which can be switched out at any time   |
 
 
 #### External Research
