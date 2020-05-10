@@ -147,3 +147,18 @@ I think this can be solved simply by using the **Transaction Script Singleton pa
 Below is my **class diagram** for this approach. Note: I have left out the modules in the Domain Model that are superfluous to the drivers of our system.
 
 ![NewDomainModel](images/ClassDiagram.png)
+
+
+## Entry 3: Adding Shortest Path Algorithms
+
+I will first try incorporating the **Strategy Pattern** here to pass in the algorithm that the researches wishes to use. I could do this by using an abstract interface
+called "Algorithm", which will be implemented by classese that hold the respective algorithm code needed to run their particular algorithm. This will mean no code will
+need to change when new algorithms come about and all we will need to do is add new implementations of those algorithms. My other idea is regarding the **Command Pattern**. 
+This will involve having concrete commands that operate with different requests for different graph data structures. Here, we can
+add new concrete commands to add new code if new algorithms come in that implement a RunTraversal interface. Again, no code will need to change with new algorithms.
+
+After some thought, I believe that the **Strategy Pattern** approach is more suitable for **QAS2**. The reason behind the again comes back to the idea of overkill.
+Using the command pattern is overly complex for the problem we are trying to solve. Additionally, the Strategy Pattern does a better job of encapsulating the
+behavior that will change, which in this case is the Algorithm interface. Below is the final class diagram approach using both the **Singleton and Strategy Patterns**.
+
+![ClassDiagram](images/FinalClassDiagram.png)
