@@ -169,4 +169,9 @@ behavior that will change, which in this case is the Algorithm interface. Below 
 
 ![ClassDiagram](images/FinalClassDiagram1.png)
 
-Finally, the sequence diagram is included below
+Finally, the sequence diagram is included below:
+
+![SequenceDiagram](images/FinalSequenceDiagram1.png)
+
+One more thing I will note, the "Algorithm" class is whatever the researcher decides. They are able to add and use any algorithm that they wish, such as 
+Breadth First, Depth First, etc.
