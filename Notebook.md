@@ -4,6 +4,8 @@
 
 ## Entry 1: Balance Abstraction with the Best Factory Pattern
 
+### Time Spent: 3.5 hours
+
 ### Option 1: Factory Method Approach
 
 I think that using the Factory Method pattern in order to generate a common Graph abstraction that hides the differences between the two implementations of the
@@ -90,6 +92,8 @@ https://www.geeksforgeeks.org/abstract-factory-pattern/
 
 ## Entry 2 Singleton
 
+### Time Spent: 2 hours
+
 Now we are going to use the approach of using a Single via a Transaction Script
 
 #### ADD Iteration 1: Review Inputs
@@ -151,6 +155,8 @@ Below is my **class diagram** for this approach. Note: I have left out the modul
 
 ## Entry 3: Adding Shortest Path Algorithms
 
+### Time Spent: 1.5 hours
+
 I will first try incorporating the **Strategy Pattern** here to pass in the algorithm that the researches wishes to use. I could do this by using an abstract interface
 called "Algorithm", which will be implemented by classese that hold the respective algorithm code needed to run their particular algorithm. This will mean no code will
 need to change when new algorithms come about and all we will need to do is add new implementations of those algorithms. My other idea is regarding the **Command Pattern**. 
@@ -162,3 +168,5 @@ Using the command pattern is overly complex for the problem we are trying to sol
 behavior that will change, which in this case is the Algorithm interface. Below is the final class diagram approach using both the **Singleton and Strategy Patterns**.
 
 ![ClassDiagram](images/FinalClassDiagram1.png)
+
+Finally, the sequence diagram is included below
