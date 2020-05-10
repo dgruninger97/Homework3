@@ -81,3 +81,45 @@ Below is the modified Domain Model which includes the implementation of the Desi
 | US1      |                     |                |   Use the abstract factory method to allow construction of both Graphs, allowing for comparison using the ComputationComparison class    |
 | US2      |                     |                |   Construct a class called AverageComparison to compute the average of both graph implementations                             |
 | US3      |                     |                |   Use the already structured edge implementations to implement an abstract edge which can be switched out at any time                        |
+
+## Entry 2 Singleton
+
+Now we are going to use the approach of using a Single via a Transaction Script
+
+#### ADD Iteration 1: Review Inputs
+
+Our inputs here will simply be the User Scenarios and our knowledge of the Transaction Script Singleton pattern.
+
+#### ADD Iteration 2: Establish Iteration Goal by Selecting Drivers
+
+Our iteration goal here is to address the user scenarios laid out to up by applying the Transaction Script pattern to our problem.
+
+#### ADD Iteration 3: Choose One of More Elements of the System to Refine
+
+We will be developing the pattern from scratch, so the entire Domain Module will be refined here.
+
+#### ADD Iteration 4: Choose One or More Design Concepts that Satisfy the Selected Drivers
+
+We will be using the Singleton pattern to approach this problem. More specifically, we will be using the Singleton pattern applied via a Transaction Script class
+to hold and execute all of the responsibilites for **US1, US2, and US3**.
+
+#### ADD Iteration 5: Instantiate Architectural Elements, Allocate Responsibilities and Define Interfaces
+
+Design Decision: Use the **Singleton Pattern** to develop a new Domain Model that will hold and execute all the logic regarding **US1 and US2**. We will handle
+**US3** in the same manner regarding our other implementation; by using implementations of and abstract edge to represent weighted edges vs unweighted edges.
+
+#### ADD Iteration 6: Sketch Views and Record Design Decisions
+
+Below is my developed domain model, using the Transaction Script Pattern.
+
+![NewDomainModel](images/FinalDomainModel2.png)
+
+
+#### ADD Iteration 7: Perform Anaylsis of Current Design and Review Iteration Goal and Achievement of Design Purpose
+
+
+#### External Research
+
+https://www.informit.com/articles/article.aspx?p=1398617
+
+http://www.servicedesignpatterns.com/WebServiceImplementationStyles/TransactionScript
