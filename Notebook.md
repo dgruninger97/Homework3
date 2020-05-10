@@ -135,3 +135,15 @@ Below is my developed domain model, using the Transaction Script Pattern.
 https://www.informit.com/articles/article.aspx?p=1398617
 
 http://www.servicedesignpatterns.com/WebServiceImplementationStyles/TransactionScript
+
+
+### Preferred Approach
+
+Although, in my opinion, both designs are very good, I have to say that I like the Singleton Pattern approach more. The reason being is I think the factory
+pattern is overkill in that I think it incorporates too much logic for a relatively simple problem. Yes, it is true that we will need to modify the Transaction
+Script class if new graph implementations need to be tested; however there will be even more code required if we are using the Abstract Factory pattern. Again,
+I think this can be solved simply by using the **Transaction Script Singleton pattern approach**.
+
+Below is my **class diagram** for this approach. Note: I have left out the modules in the Domain Model that are superfluous to the drivers of our system.
+
+![NewDomainModel](images/ClassDiagram.png)
