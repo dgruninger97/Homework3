@@ -161,4 +161,4 @@ After some thought, I believe that the **Strategy Pattern** approach is more sui
 Using the command pattern is overly complex for the problem we are trying to solve. Additionally, the Strategy Pattern does a better job of encapsulating the
 behavior that will change, which in this case is the Algorithm interface. Below is the final class diagram approach using both the **Singleton and Strategy Patterns**.
 
-![ClassDiagram](images/FinalClassDiagram.png)
+![ClassDiagram](images/FinalClassDiagram1.png)
